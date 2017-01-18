@@ -12,8 +12,8 @@
 		257342541E2E567800372B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257342521E2E567800372B14 /* Main.storyboard */; };
 		257342561E2E567800372B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257342551E2E567800372B14 /* Assets.xcassets */; };
 		257342591E2E567800372B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257342571E2E567800372B14 /* LaunchScreen.storyboard */; };
-		257342621E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 257342611E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.m */; };
-		25FC9A551E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FC9A541E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.m */; };
+		25E0F4A21E2F774D00AEF652 /* UIViewController+TextFitScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E0F4A11E2F774D00AEF652 /* UIViewController+TextFitScreen.m */; };
+		25E0F4A51E2F77A800AEF652 /* ScalingTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E0F4A41E2F77A800AEF652 /* ScalingTextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +25,10 @@
 		257342551E2E567800372B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257342581E2E567800372B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2573425A1E2E567800372B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		257342601E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LabelTextFitScreen.h"; sourceTree = "<group>"; };
-		257342611E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LabelTextFitScreen.m"; sourceTree = "<group>"; };
-		25FC9A531E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScaleOneSuccessViewController.h; sourceTree = "<group>"; };
-		25FC9A541E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleScaleOneSuccessViewController.m; sourceTree = "<group>"; };
+		25E0F4A01E2F774D00AEF652 /* UIViewController+TextFitScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TextFitScreen.h"; sourceTree = "<group>"; };
+		25E0F4A11E2F774D00AEF652 /* UIViewController+TextFitScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TextFitScreen.m"; sourceTree = "<group>"; };
+		25E0F4A31E2F77A800AEF652 /* ScalingTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalingTextViewController.h; sourceTree = "<group>"; };
+		25E0F4A41E2F77A800AEF652 /* ScalingTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalingTextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +63,10 @@
 			children = (
 				2573424C1E2E567800372B14 /* AppDelegate.h */,
 				2573424D1E2E567800372B14 /* AppDelegate.m */,
-				25FC9A531E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.h */,
-				25FC9A541E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.m */,
-				257342601E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.h */,
-				257342611E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.m */,
+				25E0F4A31E2F77A800AEF652 /* ScalingTextViewController.h */,
+				25E0F4A41E2F77A800AEF652 /* ScalingTextViewController.m */,
+				25E0F4A01E2F774D00AEF652 /* UIViewController+TextFitScreen.h */,
+				25E0F4A11E2F774D00AEF652 /* UIViewController+TextFitScreen.m */,
 				257342521E2E567800372B14 /* Main.storyboard */,
 				257342551E2E567800372B14 /* Assets.xcassets */,
 				257342571E2E567800372B14 /* LaunchScreen.storyboard */,
@@ -155,9 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FC9A551E2E6896004D4DD8 /* SampleScaleOneSuccessViewController.m in Sources */,
 				2573424E1E2E567800372B14 /* AppDelegate.m in Sources */,
-				257342621E2E5DFD00372B14 /* UIViewController+LabelTextFitScreen.m in Sources */,
+				25E0F4A51E2F77A800AEF652 /* ScalingTextViewController.m in Sources */,
+				25E0F4A21E2F774D00AEF652 /* UIViewController+TextFitScreen.m in Sources */,
 				2573424B1E2E567800372B14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
