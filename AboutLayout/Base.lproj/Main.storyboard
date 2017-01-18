@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g3I-mk-gf1">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="D0h-yG-oVf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g3I-mk-gf1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="F96-xz-IgC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bVN-kE-2wH" kind="relationship" relationship="rootViewController" id="rnp-f3-jjz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cb-1f-yxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680.79999999999995" y="190.25487256371815"/>
+        </scene>
+        <!--等比例放大 -  失誤-->
+        <scene sceneID="d5F-1T-WSB">
+            <objects>
+                <viewController title="等比例放大 -  失誤" id="qvG-Xc-TxP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OkT-dQ-Wpe"/>
+                        <viewControllerLayoutGuide type="bottom" id="IP3-RR-ZBd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FLB-D4-YLY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賈伯斯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-TN-wM0">
+                                <rect key="frame" x="16" y="20" width="46" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="12小時前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3d-ue-jEa">
+                                <rect key="frame" x="242.5" y="20" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="賈伯斯steve-jobs的臨終遺言首度公開，震撼靈魂！！值" translatesAutoresizingMaskIntoConstraints="NO" id="pUg-Gi-9jL">
+                                <rect key="frame" x="16" y="58" width="288" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="CWb-bf-bZj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="史蒂芬·保羅·賈伯斯，通稱史蒂夫·賈伯斯，是一名美國企業家、行銷家和發明家，蘋果公司的聯合創始人之一。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-zS-HCl">
+                                <rect key="frame" x="16" y="318" width="288" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ms1-zS-HCl" secondAttribute="trailing" id="9YI-aJ-nww"/>
+                            <constraint firstItem="2Sa-TN-wM0" firstAttribute="top" secondItem="OkT-dQ-Wpe" secondAttribute="bottom" constant="20" id="Lmu-Ca-Z30"/>
+                            <constraint firstItem="pUg-Gi-9jL" firstAttribute="leading" secondItem="FLB-D4-YLY" secondAttribute="leadingMargin" id="MF9-8D-Qa9"/>
+                            <constraint firstItem="L3d-ue-jEa" firstAttribute="top" secondItem="OkT-dQ-Wpe" secondAttribute="bottom" constant="20" id="Ncj-BI-EyI"/>
+                            <constraint firstItem="Ms1-zS-HCl" firstAttribute="leading" secondItem="FLB-D4-YLY" secondAttribute="leadingMargin" id="Oim-9u-b5G"/>
+                            <constraint firstItem="pUg-Gi-9jL" firstAttribute="top" secondItem="L3d-ue-jEa" secondAttribute="bottom" constant="20" id="T2g-lh-9h8"/>
+                            <constraint firstItem="L3d-ue-jEa" firstAttribute="trailing" secondItem="FLB-D4-YLY" secondAttribute="trailingMargin" id="Zwc-Zf-Bj5"/>
+                            <constraint firstItem="2Sa-TN-wM0" firstAttribute="leading" secondItem="FLB-D4-YLY" secondAttribute="leadingMargin" id="iZH-ld-gVo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pUg-Gi-9jL" secondAttribute="trailing" id="qQc-nZ-9r5"/>
+                            <constraint firstItem="Ms1-zS-HCl" firstAttribute="top" secondItem="pUg-Gi-9jL" secondAttribute="bottom" constant="20" id="tOm-Gz-FMY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yq-YV-brc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="1086"/>
+        </scene>
+        <!--等比例放大 -  解決-->
+        <scene sceneID="6fz-40-4y4">
+            <objects>
+                <viewController title="等比例放大 -  解決" id="Jwb-L2-aYa" customClass="SampleScaleOneSuccessViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N7m-1e-IMe"/>
+                        <viewControllerLayoutGuide type="bottom" id="yBk-RM-YF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RTa-f1-sKr">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賈伯斯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpk-te-2QE">
+                                <rect key="frame" x="15.5" y="20" width="207" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="12小時前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFh-S9-hta">
+                                <rect key="frame" x="242.5" y="20" width="62" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="賈伯斯steve-jobs的臨終遺言首度公開，震撼靈魂！！值" translatesAutoresizingMaskIntoConstraints="NO" id="wM9-7D-Ti2">
+                                <rect key="frame" x="16" y="59" width="288" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wM9-7D-Ti2" secondAttribute="height" multiplier="6:5" id="hsO-iu-Uz7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="史蒂芬·保羅·賈伯斯，通稱史蒂夫·賈伯斯，是一名美國企業家、行銷家和發明家，蘋果公司的聯合創始人之一。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVL-fO-S4O">
+                                <rect key="frame" x="16" y="317" width="288" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jpk-te-2QE" firstAttribute="leading" secondItem="wM9-7D-Ti2" secondAttribute="leading" id="4Sr-Rt-xJ3"/>
+                            <constraint firstItem="Jpk-te-2QE" firstAttribute="centerY" secondItem="RTa-f1-sKr" secondAttribute="centerY" multiplier="0.115" id="ARD-Yo-iO0"/>
+                            <constraint firstItem="wM9-7D-Ti2" firstAttribute="width" secondItem="RTa-f1-sKr" secondAttribute="width" multiplier="0.9" id="FJc-0a-OAN"/>
+                            <constraint firstItem="MVL-fO-S4O" firstAttribute="centerX" secondItem="RTa-f1-sKr" secondAttribute="centerX" id="Jup-X3-KXB"/>
+                            <constraint firstItem="MVL-fO-S4O" firstAttribute="width" secondItem="wM9-7D-Ti2" secondAttribute="width" id="Khp-qf-HyZ"/>
+                            <constraint firstItem="wM9-7D-Ti2" firstAttribute="centerX" secondItem="RTa-f1-sKr" secondAttribute="centerX" id="Rdq-4x-hpP"/>
+                            <constraint firstItem="OFh-S9-hta" firstAttribute="trailing" secondItem="wM9-7D-Ti2" secondAttribute="trailing" id="Vkm-hu-Wtb"/>
+                            <constraint firstItem="wM9-7D-Ti2" firstAttribute="centerY" secondItem="RTa-f1-sKr" secondAttribute="centerY" multiplier="0.71" id="cBT-rx-Arj"/>
+                            <constraint firstItem="MVL-fO-S4O" firstAttribute="centerY" secondItem="RTa-f1-sKr" secondAttribute="centerY" multiplier="1.42" id="h4w-1p-EFr"/>
+                            <constraint firstItem="OFh-S9-hta" firstAttribute="leading" secondItem="Jpk-te-2QE" secondAttribute="trailing" constant="20" id="oWD-Eb-GgS"/>
+                            <constraint firstItem="OFh-S9-hta" firstAttribute="centerY" secondItem="Jpk-te-2QE" secondAttribute="centerY" id="vFe-nt-dMq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNM-Ut-VSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="1086"/>
+        </scene>
+        <!--AboutLayout-->
+        <scene sceneID="3Gr-4H-6Ch">
+            <objects>
+                <tableViewController title="AboutLayout" id="bVN-kE-2wH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BlC-UV-bF9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="等比例放大" footerTitle="© 2017 Nixon Shih" id="mD4-iC-G92">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="GxG-0f-8q4" style="IBUITableViewCellStyleDefault" id="PBt-wq-nRX">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PBt-wq-nRX" id="rQ3-8I-mQw">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="等比例放大 - 失誤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GxG-0f-8q4">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qvG-Xc-TxP" kind="show" id="bBv-mu-G19"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="tlR-uD-LDo" style="IBUITableViewCellStyleDefault" id="GvC-dO-GDQ">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GvC-dO-GDQ" id="m2t-8T-ti3">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="等比例放大 - 解決" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tlR-uD-LDo">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Jwb-L2-aYa" kind="show" id="byP-Mx-1O1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="bVN-kE-2wH" id="J8U-HD-3Ea"/>
+                            <outlet property="delegate" destination="bVN-kE-2wH" id="7NY-Sg-mh8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="AboutLayout" id="EOa-Rw-KHM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovM-QC-a8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="賈伯斯steve-jobs的臨終遺言首度公開，震撼靈魂！！值" width="1280" height="665"/>
+    </resources>
+</document>
