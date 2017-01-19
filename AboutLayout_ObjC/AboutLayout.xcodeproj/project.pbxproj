@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256236561E305D0A00C3DE8C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256236551E305D0A00C3DE8C /* MapViewController.m */; };
+		256236591E305F7600C3DE8C /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256236581E305F7600C3DE8C /* ArrowView.m */; };
+		2562365C1E3061FC00C3DE8C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2562365B1E3061FC00C3DE8C /* MapKit.framework */; };
 		2573424B1E2E567800372B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2573424A1E2E567800372B14 /* main.m */; };
 		2573424E1E2E567800372B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2573424D1E2E567800372B14 /* AppDelegate.m */; };
 		257342541E2E567800372B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257342521E2E567800372B14 /* Main.storyboard */; };
@@ -17,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256236541E305D0A00C3DE8C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		256236551E305D0A00C3DE8C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		256236571E305F7600C3DE8C /* ArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowView.h; sourceTree = "<group>"; };
+		256236581E305F7600C3DE8C /* ArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowView.m; sourceTree = "<group>"; };
+		2562365B1E3061FC00C3DE8C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		257342461E2E567800372B14 /* AboutLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2573424A1E2E567800372B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2573424C1E2E567800372B14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,17 +44,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2562365C1E3061FC00C3DE8C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2562365A1E3061FC00C3DE8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2562365B1E3061FC00C3DE8C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2573423D1E2E567800372B14 = {
 			isa = PBXGroup;
 			children = (
 				257342481E2E567800372B14 /* AboutLayout */,
 				257342471E2E567800372B14 /* Products */,
+				2562365A1E3061FC00C3DE8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +83,12 @@
 				2573424D1E2E567800372B14 /* AppDelegate.m */,
 				25E0F4A31E2F77A800AEF652 /* ScalingTextViewController.h */,
 				25E0F4A41E2F77A800AEF652 /* ScalingTextViewController.m */,
+				256236541E305D0A00C3DE8C /* MapViewController.h */,
+				256236551E305D0A00C3DE8C /* MapViewController.m */,
 				25E0F4A01E2F774D00AEF652 /* UIViewController+TextFitScreen.h */,
 				25E0F4A11E2F774D00AEF652 /* UIViewController+TextFitScreen.m */,
+				256236571E305F7600C3DE8C /* ArrowView.h */,
+				256236581E305F7600C3DE8C /* ArrowView.m */,
 				257342521E2E567800372B14 /* Main.storyboard */,
 				257342551E2E567800372B14 /* Assets.xcassets */,
 				257342571E2E567800372B14 /* LaunchScreen.storyboard */,
@@ -157,6 +179,8 @@
 			files = (
 				2573424E1E2E567800372B14 /* AppDelegate.m in Sources */,
 				25E0F4A51E2F77A800AEF652 /* ScalingTextViewController.m in Sources */,
+				256236591E305F7600C3DE8C /* ArrowView.m in Sources */,
+				256236561E305D0A00C3DE8C /* MapViewController.m in Sources */,
 				25E0F4A21E2F774D00AEF652 /* UIViewController+TextFitScreen.m in Sources */,
 				2573424B1E2E567800372B14 /* main.m in Sources */,
 			);
