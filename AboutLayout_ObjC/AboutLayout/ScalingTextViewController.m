@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 以4寸為基準調整比例
     CGFloat rate = [UIScreen mainScreen].bounds.size.width / 320;
     [self changeFontSizeWithScalingRate:rate];
 }

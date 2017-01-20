@@ -25,28 +25,27 @@
         
         if ([theSubView isKindOfClass:[UILabel class]]) {
             UILabel *theLabel = (UILabel*)theSubView;
-            [self scalingFontSizeWithLabel:theLabel
-                                   andRate:scalingRate];
+            [self scalingTextWithLabel:theLabel
+                               andRate:scalingRate];
         }
         
         if ([theSubView isKindOfClass:[UIButton class]]) {
             UIButton *theButton = (UIButton*)theSubView;
-            [self scalingFontSizeWithButton:theButton
-                                    andRate:scalingRate];
+            [self scalingTextWithButton:theButton
+                                andRate:scalingRate];
         }
     }
 }
 
-- (void)scalingFontSizeWithLabel:(UILabel*)theLabel
-                         andRate:(CGFloat)rate {
+- (void)scalingTextWithLabel:(UILabel*)theLabel
+                     andRate:(CGFloat)rate {
     theLabel.font = [UIFont fontWithName:theLabel.font.fontName
                                     size:theLabel.font.pointSize * rate];
 }
 
-- (void)scalingFontSizeWithButton:(UIButton*)theButton
-                          andRate:(CGFloat)rate {
-    theButton.titleLabel.font = [UIFont fontWithName:theButton.titleLabel.font.fontName
-                                                size:theButton.titleLabel.font.pointSize * rate];
+- (void)scalingTextWithButton:(UIButton*)theButton
+                      andRate:(CGFloat)rate {
+    [self scalingTextWithLabel:theButton.titleLabel andRate:rate];
 }
 
 @end

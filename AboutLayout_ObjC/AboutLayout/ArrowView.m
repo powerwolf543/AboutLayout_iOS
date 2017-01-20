@@ -41,13 +41,6 @@
 }
 
 - (void)drawArrow {
-    
-    CGSize viewSize = self.bounds.size;
-    UIBezierPath *path = [UIBezierPath new];
-    [path moveToPoint:CGPointMake(0, 0)];
-    [path addLineToPoint:CGPointMake(viewSize.width / 2, viewSize.height)];
-    [path addLineToPoint:CGPointMake(viewSize.width, 0)];
-    [path closePath];
 
     arrowLayer = [CAShapeLayer new];
     arrowLayer.frame = self.bounds;
