@@ -347,10 +347,10 @@
             </objects>
             <point key="canvasLocation" x="1807.5" y="1067.9577464788733"/>
         </scene>
-        <!--View Controller-->
+        <!--比大小2-->
         <scene sceneID="Yo1-ds-3hO">
             <objects>
-                <viewController id="SW3-6P-ueg" sceneMemberID="viewController">
+                <viewController title="比大小2" id="SW3-6P-ueg" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dhW-hI-UQE"/>
                         <viewControllerLayoutGuide type="bottom" id="Q1W-aw-Tbj"/>
@@ -360,11 +360,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ColorApple" translatesAutoresizingMaskIntoConstraints="NO" id="E1S-8F-bzi">
-                                <rect key="frame" x="-160" y="-141" width="640" height="787"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E1S-8F-bzi" secondAttribute="height" multiplier="390:479" id="dfG-Oj-YDB"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.25490196078431371" green="0.45882352941176469" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="E1S-8F-bzi" firstAttribute="width" relation="lessThanOrEqual" secondItem="BQm-rm-2Mr" secondAttribute="width" id="QPy-9a-t5w"/>
                             <constraint firstItem="E1S-8F-bzi" firstAttribute="centerX" secondItem="BQm-rm-2Mr" secondAttribute="centerX" id="ajc-bb-Py8"/>
                             <constraint firstItem="E1S-8F-bzi" firstAttribute="centerY" secondItem="BQm-rm-2Mr" secondAttribute="centerY" id="bj6-I0-8HP"/>
                         </constraints>
@@ -389,7 +393,7 @@
                                         <rect key="frame" x="0.0" y="56" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PBt-wq-nRX" id="rQ3-8I-mQw">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="等比例縮放1 - 失誤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GxG-0f-8q4">
@@ -409,7 +413,7 @@
                                         <rect key="frame" x="0.0" y="100" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GvC-dO-GDQ" id="m2t-8T-ti3">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="等比例縮放1 - 解決" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tlR-uD-LDo">
@@ -430,10 +434,10 @@
                             <tableViewSection headerTitle="等比例縮放-2" id="bPK-97-O1u">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Bna-ni-vJO" style="IBUITableViewCellStyleDefault" id="LqT-h7-v4a">
-                                        <rect key="frame" x="0.0" y="201" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="200" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LqT-h7-v4a" id="U1C-H8-CQ8">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="等比例縮放2 - 失誤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bna-ni-vJO">
@@ -450,10 +454,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="33q-6g-PrC" style="IBUITableViewCellStyleDefault" id="nbA-E5-B1G">
-                                        <rect key="frame" x="0.0" y="245" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="244" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbA-E5-B1G" id="oqd-oM-Lsu">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="等比例縮放2 - 解決" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="33q-6g-PrC">
@@ -474,7 +478,7 @@
                             <tableViewSection headerTitle="比大小-1" id="MLy-4l-8sH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="1of-Mc-WjI" style="IBUITableViewCellStyleDefault" id="ekH-ru-6hC">
-                                        <rect key="frame" x="0.0" y="346" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="344" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ekH-ru-6hC" id="0d2-UR-zrL">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -498,7 +502,7 @@
                             <tableViewSection headerTitle="比大小-2" footerTitle="© 2017 Nixon Shih" id="Sma-uW-xjD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="E7F-50-TZ5" style="IBUITableViewCellStyleDefault" id="Tv5-x6-lUH">
-                                        <rect key="frame" x="0.0" y="454" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="451" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tv5-x6-lUH" id="mOa-Ye-jDd">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -668,7 +672,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ColorApple" width="640" height="786"/>
+        <image name="ColorApple" width="390" height="479"/>
         <image name="賈伯斯steve-jobs的臨終遺言首度公開，震撼靈魂！！值" width="1280" height="665"/>
     </resources>
 </document>
