@@ -20,12 +20,12 @@ extension UIViewController {
                 
                 if aView is UILabel {
                     let aLebel = aView as! UILabel
-                    scalingText(withLabel: aLebel, scalingRate: rate)
+                    scalingText(with: aLebel, scalingRate: rate)
                 }
                 
                 if aView is UIButton {
                     let aButton = aView as! UIButton
-                    scalingText(withButton: aButton, scalingRate: rate)
+                    scalingText(with: aButton, scalingRate: rate)
                 }
             }
         }
@@ -33,7 +33,7 @@ extension UIViewController {
         findText(with: self.view, rate: scalingRate)
     }
     
-    fileprivate func scalingText(withLabel theLabel: UILabel?, scalingRate: CGFloat) {
+    fileprivate func scalingText(with theLabel: UILabel?, scalingRate: CGFloat) {
         
         guard let label = theLabel else { return }
         
@@ -41,7 +41,8 @@ extension UIViewController {
                             size: label.font.pointSize * scalingRate)
     }
     
-    fileprivate func scalingText(withButton theButton: UIButton, scalingRate: CGFloat) {
-        scalingText(withLabel: theButton.titleLabel, scalingRate: scalingRate)
+    fileprivate func scalingText(with theButton: UIButton, scalingRate: CGFloat) {
+        scalingText(with: theButton.titleLabel, scalingRate: scalingRate)
     }
+    
 }
