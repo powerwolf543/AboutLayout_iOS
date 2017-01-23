@@ -56,8 +56,7 @@
         }
         
         NSDictionary *dic = placemarks.firstObject.addressDictionary;
-        NSString *detail = ((NSArray*)dic[@"FormattedAddressLines"]).count < 3 ? @"" : dic[@"FormattedAddressLines"][0];
-        detail = [NSString stringWithFormat:@"%@ %@",((NSArray*)dic[@"FormattedAddressLines"]).count < 3 ? @"" : @",",detail];
+        NSString *detail = dic[@"Name"] ? [NSString stringWithFormat:@", %@",dic[@"Name"]] : @"";
         NSString *address = [NSString stringWithFormat:@"%@, %@, %@%@",dic[@"Country"],dic[@"SubAdministrativeArea"],dic[@"City"],detail];
         _addressLabel.text = address;
         

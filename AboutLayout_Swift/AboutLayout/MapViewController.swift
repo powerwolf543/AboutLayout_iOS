@@ -53,8 +53,7 @@ class MapViewController: UIViewController {
             }
             
             let dic = (placemarks?.first?.addressDictionary)!
-            let formattedAddressLines = dic["FormattedAddressLines"] as! [String]
-            let detail = formattedAddressLines.count < 3 ? "" : ", \(formattedAddressLines[0])"
+            let detail = dic["Name"] == nil ? "" : ", \(dic["Name"]!)"
             let address = "\(dic["Country"]!), \(dic["SubAdministrativeArea"]!), \(dic["City"]!)\(detail)"
             self.addressLabel.text = address
             
