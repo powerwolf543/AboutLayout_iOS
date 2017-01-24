@@ -14,13 +14,13 @@ AboutLayout_iOS
 Require
 -----------
 - Xcode 8
-- iOS 10
+- iOS 9
 - Objective - C
 - Swift 3
 
 Version
 -----------
-- 1.0
+- 1.1
 
 License
 ----

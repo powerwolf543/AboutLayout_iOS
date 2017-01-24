@@ -76,6 +76,10 @@
     return false;
 }
 
+- (void)showAddressWithTimer:(NSTimer*)theTimer {
+    [self showAddressWithCoordinate:_mapView.centerCoordinate];
+}
+
 #pragma mark - MKMapViewDelegate
 
 - (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
@@ -92,9 +96,13 @@
         timer = nil;
     }
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.f repeats:false block:^(NSTimer * _Nonnull timer) {
-        [self showAddressWithCoordinate:mapView.centerCoordinate];
-    }];
+    if ([NSTimer instancesRespondToSelector:@selector(scheduledTimerWithTimeInterval:repeats:block:)]) {
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.f repeats:false block:^(NSTimer * _Nonnull timer) {
+            [self showAddressWithCoordinate:mapView.centerCoordinate];
+        }];
+    }else{
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.f target:self selector:@selector(showAddressWithTimer:) userInfo:nil repeats:false];
+    }
 }
 
 @end
