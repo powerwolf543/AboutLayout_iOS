@@ -77,6 +77,11 @@ class MapViewController: UIViewController {
         
         return false
     }
+    
+    @objc fileprivate func showAddress(withTimer theTimer: Timer) {
+        let coordinate = theTimer.userInfo as! CLLocationCoordinate2D
+        showAddress(with: coordinate)
+    }
 }
 
 extension MapViewController: MKMapViewDelegate {
@@ -92,9 +97,13 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         
         timer?.invalidate()
-        
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { (aTimer) in
-            self.showAddress(with: mapView.centerCoordinate)
-        })
+  
+        if #available(iOS 10.0, *) {
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { (aTimer) in
+                self.showAddress(with: mapView.centerCoordinate)
+            })
+        } else {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showAddress(withTimer:)), userInfo: mapView.centerCoordinate, repeats: false)
+        }
     }
 }
