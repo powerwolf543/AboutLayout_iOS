@@ -12,10 +12,7 @@ class ProgrammaticallyViewController: UIViewController {
     
     fileprivate let kTableViewCellIdentifier = "Cell"
     
-    fileprivate var headerBackgroundView: UIView?
     fileprivate var musicLogoImageView: UIImageView?
-    fileprivate var titleLabel: UILabel?
-    fileprivate var tableView: UITableView?
     
     fileprivate let dataSource: [[String:Any]]? = {
         guard let path = Bundle.main.path(forResource: "MusicData", ofType: "json") else {
@@ -57,13 +54,11 @@ class ProgrammaticallyViewController: UIViewController {
         title = "Show"
         
         let theTableView = UITableView()
-        tableView = theTableView
         view.addSubview(theTableView)
         theTableView.dataSource = self
         theTableView.register(CustomCell.self, forCellReuseIdentifier: kTableViewCellIdentifier)
         
         let theHeaderBackgroundView = UIView()
-        headerBackgroundView = theHeaderBackgroundView
         view.addSubview(theHeaderBackgroundView)
         
         let theMusicLogoImageView = UIImageView(image: UIImage(named: "MusicLogo"))
@@ -71,7 +66,6 @@ class ProgrammaticallyViewController: UIViewController {
         theHeaderBackgroundView.addSubview(theMusicLogoImageView)
         
         let theTitleLabel = UILabel()
-        titleLabel = theTitleLabel
         theTitleLabel.text = "Music Life"
         theHeaderBackgroundView.addSubview(theTitleLabel)
         
@@ -124,6 +118,7 @@ extension ProgrammaticallyViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // shit 這都不會返回 nil 啊
         let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewCellIdentifier) ?? CustomCell(style: .subtitle, reuseIdentifier: kTableViewCellIdentifier)
 
         let info = dataSource![indexPath.row]
