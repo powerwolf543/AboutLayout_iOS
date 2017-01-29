@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2532E5B11E31E9DB0009295A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2532E5AF1E31E9DB0009295A /* Main.storyboard */; };
+		25413D941E3CB5B000B8AC16 /* ProgrammaticallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25413D931E3CB5B000B8AC16 /* ProgrammaticallyViewController.m */; };
+		25413D981E3CCF4800B8AC16 /* MusicData.json in Resources */ = {isa = PBXBuildFile; fileRef = 25413D971E3CCF4800B8AC16 /* MusicData.json */; };
 		2542534C1E31D6E100FB5447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2542534B1E31D6E100FB5447 /* Assets.xcassets */; };
 		254253521E31D6FE00FB5447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254253501E31D6FE00FB5447 /* LaunchScreen.storyboard */; };
 		254253541E31D70400FB5447 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 254253531E31D70400FB5447 /* Info.plist */; };
@@ -22,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		2532E5B01E31E9DB0009295A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25413D921E3CB5B000B8AC16 /* ProgrammaticallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammaticallyViewController.h; sourceTree = "<group>"; };
+		25413D931E3CB5B000B8AC16 /* ProgrammaticallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammaticallyViewController.m; sourceTree = "<group>"; };
+		25413D971E3CCF4800B8AC16 /* MusicData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MusicData.json; path = ../../Resource/MusicData.json; sourceTree = "<group>"; };
 		2542534B1E31D6E100FB5447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resource/Assets.xcassets; sourceTree = "<group>"; };
 		254253511E31D6FE00FB5447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Resource/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254253531E31D70400FB5447 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Resource/Info.plist; sourceTree = "<group>"; };
@@ -86,6 +91,8 @@
 				25E0F4A41E2F77A800AEF652 /* ScalingTextViewController.m */,
 				256236541E305D0A00C3DE8C /* MapViewController.h */,
 				256236551E305D0A00C3DE8C /* MapViewController.m */,
+				25413D921E3CB5B000B8AC16 /* ProgrammaticallyViewController.h */,
+				25413D931E3CB5B000B8AC16 /* ProgrammaticallyViewController.m */,
 				25E0F4A01E2F774D00AEF652 /* UIViewController+TextFitScreen.h */,
 				25E0F4A11E2F774D00AEF652 /* UIViewController+TextFitScreen.m */,
 				256236571E305F7600C3DE8C /* ArrowView.h */,
@@ -94,6 +101,7 @@
 				254253501E31D6FE00FB5447 /* LaunchScreen.storyboard */,
 				2542534B1E31D6E100FB5447 /* Assets.xcassets */,
 				254253531E31D70400FB5447 /* Info.plist */,
+				25413D971E3CCF4800B8AC16 /* MusicData.json */,
 				257342491E2E567800372B14 /* Supporting Files */,
 			);
 			path = AboutLayout;
@@ -169,6 +177,7 @@
 				254253521E31D6FE00FB5447 /* LaunchScreen.storyboard in Resources */,
 				2542534C1E31D6E100FB5447 /* Assets.xcassets in Resources */,
 				2532E5B11E31E9DB0009295A /* Main.storyboard in Resources */,
+				25413D981E3CCF4800B8AC16 /* MusicData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +191,7 @@
 				25E0F4A51E2F77A800AEF652 /* ScalingTextViewController.m in Sources */,
 				256236591E305F7600C3DE8C /* ArrowView.m in Sources */,
 				25D712631E31BBD10038C2D5 /* AppDelegate.m in Sources */,
+				25413D941E3CB5B000B8AC16 /* ProgrammaticallyViewController.m in Sources */,
 				256236561E305D0A00C3DE8C /* MapViewController.m in Sources */,
 				25E0F4A21E2F774D00AEF652 /* UIViewController+TextFitScreen.m in Sources */,
 				2573424B1E2E567800372B14 /* main.m in Sources */,
